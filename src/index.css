@@ -56,6 +56,7 @@ nav ul li a {
   font-weight: 400;
   padding: 3px 7px; /* Smaller padding */
   border-radius: 5px;
+
 }
 
 nav ul li a:hover {
@@ -1118,4 +1119,12 @@ font-weight: bold !important;
   font-size: 16px;
   color: #333;
   font-weight: bold;
+}
+
+/* Style for cart icon in navbar */
+.cart-icon img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-top:-5px;
 }

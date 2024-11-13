@@ -1,23 +1,11 @@
 import React, { useEffect } from 'react';
 import logo from '../../images/logo.png';
 import { Nav } from 'react-bootstrap';
+import panier from '../../images/panier.png'; // Import your cart icon image here
 
 
 const NavBarLogin = () => {
-  useEffect(() => {
-    const mobileNav = document.querySelector(".hamburger");
-    const navbar = document.querySelector(".menubar");
 
-    const toggleNav = () => {
-      navbar.classList.toggle("active");
-      mobileNav.classList.toggle("hamburger-active");
-    };
-
-    mobileNav.addEventListener("click", toggleNav);
-
-    // Cleanup event listener on component unmount
-    return () => mobileNav.removeEventListener("click", toggleNav);
-  }, []);
 
   return (
     <>
@@ -39,13 +27,18 @@ const NavBarLogin = () => {
           <li>
             <a href="#">Contact Us</a>
           </li>
+          <li className="cart-icon">
+            <a href="#">
+              <img src={panier} alt="Cart"/>
+            </a>
+          </li>
           <li>
-          <a href="/login">
-          <button href="/login" className="button1">
-            <span>Login</span>
-          </button> 
-          </a>
-           </li>
+            <a href="/login">
+              <button className="button1">
+                <span>Login</span>
+              </button> 
+            </a>
+          </li>
         </ul>
         <div className="hamburger">
           <span className="line"></span>
@@ -56,7 +49,7 @@ const NavBarLogin = () => {
       <div className="menubar">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#">Services</a>
@@ -68,7 +61,7 @@ const NavBarLogin = () => {
             <a href="#">Contact Us</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#">Panier</a>
           </li>
         </ul>
       </div>

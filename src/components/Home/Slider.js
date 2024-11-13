@@ -28,7 +28,7 @@ const Slider = () => {
                   alt="First slide"
               />
               <div className="">
-              <h3 className="slider-title"> From Essentials to Exclusives – Find It All Here</h3>
+              <h3 className="slider-title"> From Essentials to Exclusives</h3>
               <p className="slider-text">More Than 40% </p>
               </div>
           </div>

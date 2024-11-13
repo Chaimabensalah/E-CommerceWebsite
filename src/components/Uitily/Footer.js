@@ -20,13 +20,17 @@ const Footer = () => {
                         className="d-flex justify-content-end align-items-center ">
                         <div className="d-flex pt-3 mx-2">
                             <img width="20px" height="20px" src={phone} alt="" />
-                            <p className="footer-phone">5648882235</p>
+                            <p className="footer-phone">5016394611</p>
                         </div>
                         <div style={{ cursor: "pointer" }}>
-                            <img width="20px" height="20px" src={facebook} alt="" />
+                            <a href="https://www.facebook.com/chaima.chaimabensalah.9" target="_blank" rel="noopener noreferrer">
+                            <img width="20px" height="20px" src={facebook} alt="Facebook" />
+                            </a>
                         </div>
                         <div style={{ cursor: "pointer" }} className="">
+                            <a href="https://www.instagram.com/chaima_ben.salah/" target="_blank" rel="noopener noreferrer">
                             <img width="20px" height="20px" src={instagram} alt="" />
+                            </a>
                         </div>
                         <div style={{ cursor: "pointer" }} className="">
                             <img width="20px" height="20px" src={twitter} alt="" />
